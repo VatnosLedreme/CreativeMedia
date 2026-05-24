@@ -7,7 +7,7 @@
     </defs>
 
     <!-- Background -->
-    <rect width="200%" height="200%" fill="#ffffff"  x="0" y="0"/>
+    <rect width="100%" height="100%" fill="#ffffff"  x="0" y="0"/>
 
     <!-- Tank T-101 -->
     <path d="M 300 250 Q 400 200 500 250 L 500 450 L 300 450 Z" fill="#f4f4f4" stroke="#000" stroke-width="3"/>
