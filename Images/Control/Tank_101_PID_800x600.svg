@@ -1,0 +1,49 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg" style="font-family: Arial, sans-serif;">
+    <!-- Definitions for Arrowheads -->
+    <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L0,6 L9,3 z" fill="#000" />
+        </marker>
+    </defs>    
+    <g transform="translate(89.28573608398438, 32.857139587402344) scale(0.9976, 0.9992) translate(-50, -23.571434020996094)">
+        <path d="M 300 250 Q 400 200 500 250 L 500 450 L 300 450 Z" fill="#f4f4f4" stroke="#000" stroke-width="5"/>
+        <text x="350" y="349" font-size="20" font-weight="bold">TANK T-101</text>
+        <text x="357" y="369" font-size="14">Product Storage</text>
+        <line x1="50" y1="300" x2="300" y2="300" stroke="#000" stroke-width="2" marker-end="url(#arrow)" />
+        <text x="60" y="290" font-size="14" font-weight="bold">Inlet (Line-01)</text>
+        <polygon points="160,290 160,310 200,290 200,310" fill="#fff" stroke="#000" stroke-width="3"/>
+        <line x1="180" y1="300" x2="180" y2="270" stroke="#000" stroke-width="3"  transform=""/>
+        <path d="M 165 264 Q 180 236 195 264 Z" fill="#fff" stroke="#000" stroke-width="3"  transform="translate(0, 10)"/>
+        <text x="145" y="235" font-size="14" font-weight="bold">FCV-101</text>
+        <text x="149" y="250" font-size="12">(FC)</text>
+        <line x1="400" y1="450" x2="400" y2="520" stroke="#000" stroke-width="2" />
+        <line x1="400" y1="520" x2="551" y2="520" stroke="#000" stroke-width="2" marker-end="url(#arrow)"  transform=""/>
+        <text x="281" y="528" font-size="14" font-weight="bold" transform="translate(62.499969482421875, 13.33331298828125)">Outlet (Line-02)</text>
+        <circle cx="480" cy="520" r="25" fill="#fff" stroke="#000" stroke-width="2" />
+        <text x="460" y="525" font-size="14" font-weight="bold">P-101</text>
+        <line x1="505" y1="520" x2="550" y2="520" stroke="#000" stroke-width="2" marker-end="url(#arrow)"  transform="translate(15, -122.5)"/>
+        <text x="560" y="525" font-size="14">To Process</text>
+        <line x1="400" y1="288" x2="400" y2="150" stroke="#000" stroke-width="2"  transform="translate(0, -65)"/>
+        <rect x="361" y="119" width="80" height="30" fill="#fff" stroke="#000" stroke-width="2"  transform="translate(0, -55)"/>
+        <text x="369" y="139" font-size="14" font-weight="bold" transform="translate(0, -55.33332824707031)">PVSV-101</text>
+        <line x1="400" y1="120" x2="400" y2="80" stroke="#000" stroke-width="2" marker-end="url(#arrow)"  transform="translate(0, -55)"/>
+        <text x="410" y="90" font-size="12" font-weight="bold" transform="translate(0, -55)">Vent to Safe Area</text>
+        <line x1="330" y1="235" x2="330" y2="155" stroke="#000" stroke-width="1" stroke-dasharray="5,5"  transform="translate(-15, 5)"/>
+        <circle cx="330" cy="135" r="22" fill="#fff" stroke="#000" stroke-width="2"  transform="translate(-15, 5)"/>
+        <line x1="308" y1="135" x2="352" y2="135" stroke="#000" stroke-width="1"  transform="translate(-15, 5)"/>
+        <text x="321" y="130" font-size="12" font-weight="bold" transform="translate(-15, 5)">LT</text>
+        <text x="318" y="148" font-size="12" font-weight="bold" transform="translate(-15, 5)">101</text>
+        <line x1="470" y1="235" x2="470" y2="155" stroke="#000" stroke-width="1" stroke-dasharray="5,5"  transform="translate(15, 5)"/>
+        <circle cx="470" cy="135" r="22" fill="#fff" stroke="#000" stroke-width="2"  transform="translate(15, 5)"/>
+        <text x="461" y="130" font-size="12" font-weight="bold" transform="translate(15, 5)">PT</text>
+        <text x="458" y="148" font-size="12" font-weight="bold" transform="translate(15, 5)">101</text>
+        <circle cx="250" cy="270" r="18" fill="#fff" stroke="#000" stroke-width="1" />
+        <text x="236" y="268" font-size="10" font-weight="bold">LSHH</text>
+        <text x="240" y="280" font-size="10">101</text>
+        <line x1="268" y1="270" x2="300" y2="270" stroke="#000" stroke-width="1" stroke-dasharray="3,3" />
+        <circle cx="250" cy="420" r="18" fill="#fff" stroke="#000" stroke-width="1" />
+        <text x="236" y="418" font-size="10" font-weight="bold">LSLL</text>
+        <text x="240" y="430" font-size="10">101</text>
+        <line x1="268" y1="420" x2="300" y2="420" stroke="#000" stroke-width="1" stroke-dasharray="3,3" />
+    </g>
+</svg>
