@@ -29,4 +29,4 @@ Even in a hypothetical scenario where an appropriate GitHub API existed, authent
 ## Conclusion
 Due to the lack of supporting APIs from GitHub, the technical limitations of client-side OAuth, and the unacceptable security risks associated with modifying the application's Content Security Policy and handling Personal Access Tokens, automatic syncing is not feasible. 
 
-The current architecture—a completely offline, manual budgeting tool—remains the safest, most private, and most reliable method for local credit monitoring.
+The current architecture, a completely offline, manual budgeting tool remains the safest, most private, and most reliable method for local credit monitoring.
