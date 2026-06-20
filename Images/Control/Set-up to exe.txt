@@ -1,0 +1,66 @@
+Step 1: Tweak the Code for PyInstaller
+When PyInstaller creates a single-file executable, it actually unpacks itself into a hidden, temporary directory (AppData/Local/Temp/...) every time it runs. If we don't change how BASE_DIR is calculated, your app will create the paths.txt file inside that hidden, temporary folder where you'll never find it!
+
+Replace the top --- CONFIGURATION --- section of your script with this updated logic:
+
+Python
+# --- CONFIGURATION ---
+import sys # Ensure this is imported at the top
+
+# Safely determine the base directory whether running as a script or an EXE
+if getattr(sys, 'frozen', False):
+    # Running as a compiled PyInstaller executable
+    BASE_DIR = os.path.dirname(sys.executable)
+else:
+    # Running as a normal Python script
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+PATHS_FILE = os.path.join(BASE_DIR, "paths.txt")
+VERSION = "v1.3.0"
+(Save your python file as launcher.py)
+
+Step 2: Install PyInstaller
+You need to install the PyInstaller library via terminal/command prompt.
+
+Open your Command Prompt (or Terminal in VS Code).
+
+Run the following command:
+
+Bash
+pip install pyinstaller
+Step 3: Build the Executable
+Now we will tell PyInstaller to bundle your script.
+
+In your command prompt, navigate to the folder where your launcher.py script is saved.
+
+Run the following build command:
+
+Bash
+pyinstaller --onefile --noconsole launcher.py
+What these flags do:
+
+--onefile: Bundles everything into a single .exe file rather than a folder full of messy dependencies.
+
+--noconsole (or --windowed): Prevents the black background command prompt window from popping up behind your app when you launch it.
+
+(Optional): If you want to attach a physical icon file to the .exe itself (so it looks good in File Explorer), add --icon=app_icon.ico to the command, assuming you have an .ico file in that folder.
+
+Step 4: Locate and Test Your App
+Once the terminal finishes processing (you'll see "Building EXE from EXE-00.toc completed successfully"), look in your project folder.
+
+You will see a few new folders: build and dist, along with a .spec file.
+
+Open the dist folder.
+
+Inside, you will find your shiny new launcher.exe.
+
+Cleanup & Portability
+Move it anywhere: You can now drag launcher.exe to your Desktop, a USB drive, or send it to a friend.
+
+First Run: The first time you run it in a new location, it will automatically generate a fresh paths.txt file right next to wherever the .exe is located.
+
+Cleanup: You can safely delete the build folder, the dist folder, and the .spec file from your coding directory if you wish to clean up your workspace.
+
+
+
+python -m PyInstaller --onefile --windowed --icon=app_icon.ico HTML-Launcher.py
