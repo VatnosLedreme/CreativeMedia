@@ -142,3 +142,69 @@ In technical terms, these strings are known as **CLSID (Class Identifier) codes*
 * **Origin of "God Mode":** The phrase "All Tasks" is the true backend name for God Mode. The "God Mode" title was completely invented by tech bloggers in 2007 during the Windows Vista era.
 
 
+# Windows Master Configuration & Hidden Diagnostics Registry
+
+This master document serves as a complete repository for hidden Windows configuration portals, advanced diagnostics, and system shortcuts. Using these commands bypasses modern menu restrictions and allows direct access to the legacy core of the operating system.
+
+---
+
+## 🛠️ Deployment Methods
+
+You can deploy any tool in this document using one of two methods:
+
+### Method 1: Desktop Shortcut (Permanent Icon)
+1. **Right-click** an empty space on your desktop.
+2. Hover over **New** and select **Shortcut**.
+3. Paste the string from the **Command / Code** column into the location field.
+4. Click **Next**, name the shortcut whatever you want, and click **Finish**.
+
+### Method 2: The Run Box (Instant Execution)
+1. Press **`Windows Key + R`** on your keyboard.
+2. Paste the string from the **Command / Code** column directly into the box.
+3. Press **Enter**.
+
+---
+
+## 📊 Master Shortcuts Directory (CLSID Virtual Folders)
+
+These shortcuts leverage Class Identifier (CLSID) strings to open virtual folders managed directly by the Windows Shell interface.
+
+| Command / Code | Official Windows Technical Name | Practical Function / Nickname |
+| :--- | :--- | :--- |
+| `explorer shell:::{ED7BA470-8E54-465E-825C-99712043E01C}` | **All Tasks** | **God Mode**: A searchable master list of over 200 system configurations on one screen. |
+| `explorer shell:::{7007ACC7-3202-11D1-AAD2-00805FC1270E}` | **Network Connections** | **Network Adapters**: Instantly manage, disable, or assign static IPs to Wi-Fi and Ethernet hardware. |
+| `explorer shell:::{148BD4BB-A2CD-4726-80A0-A97822651E21}` | **Applications** | **The Apps Folder**: Displays all classic software and hidden Microsoft Store apps in one place. |
+| `explorer shell:::{A8A91A66-3A7D-4424-8D24-04E180695C7A}` | **Devices and Printers** | **Hardware Dashboard**: Manage external accessories and fix printer issues without interface lag. |
+| `explorer shell:::{7B81BE6A-CE2B-4676-A29E-EB907A5126C5}` | **Programs and Features** | **Classic Uninstaller**: Lightweight and fast tool to uninstall software without modern settings lag. |
+| `explorer shell:::{BB06C0E4-D293-4F75-8A90-CB05B6477EEE}` | **System** | **Advanced System Properties**: Instantly tweak virtual memory page files and environment variables. |
+| `explorer shell:::{2559a1f3-21d7-11d4-bdaf-00c04f60b9f0}` | **Run Dialog Folder** | **Network Search Panel**: A unique directory built to browse all shared local network paths at once. |
+| `explorer shell:::{05d7b0f4-2121-4eff-bf6b-ed3f69b894d9}` | **Notification Icons** | **Tray Icon Manager**: Control which icons stay permanently visible or hidden on the taskbar. |
+| `explorer shell:::{d555645e-2b78-478a-9150-0dbca88a2c2d}` | **Network Sharing** | **Network Sharing Center**: Rapid access to classic profile sharing configurations and network visibility. |
+| `explorer shell:startup` | **Startup Folder** | **Startup Direct Link**: Paste any normal program shortcut here to force it to run when Windows boots up. |
+
+---
+
+## ⚡ Power Diagnostics & Executables (Run Commands)
+
+These commands bypass the Windows File Explorer entirely. They pull up high-level optimization, diagnostic, or security engines directly from the Windows system root directory.
+
+| Command / Code | System Tool Name | Practical Function / Fix |
+| :--- | :--- | :--- |
+| `msinfo32` | **System Information** | **MSInfo**: Provides a complete diagnostic readout of every hardware component and system driver. |
+| `resmon` | **Resource Monitor** | **Advanced Task Manager**: Track real-time charts showing precisely which processes hog disk IO or network bandwidth. |
+| `mrt` | **Malware Removal Tool** | **Built-in Virus Scanner**: Forces a manual deep system scrub using Microsoft’s standalone security scanner. |
+| `mdsched` | **Memory Diagnostic** | **RAM Tester**: Restarts your system to run deep binary hardware scans for malfunctioning RAM sticks. |
+| `cleanmgr` | **Disk Cleanup** | **Legacy Storage Cleaner**: Rapid tool to safely purge gigabytes of cached Windows Update junk files. |
+| `gpedit.msc` | **Local Group Policy Editor** | **OS Policy Master**: *(Pro/Enterprise Only)* Permanently disable telemetry, block forced restarts, or modify deep OS rules. |
+
+---
+
+## 🎹 Hidden Productivity Key Combos
+
+Keep these built-in hotkey combinations memorized to navigate Windows significantly faster.
+
+* **`Windows Key + V`** : Opens **Clipboard History**. Allows you to view and paste items from a history list of your last 25 copied texts, links, or screenshots.
+* **`Windows Key + Period (.)`** : Opens the native **Glyph & Emoji Picker**. Gives you immediate access to standard emojis, animated GIFs, emoticons, and advanced math/language symbols in any text field.
+
+
+
